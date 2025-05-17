@@ -4,10 +4,7 @@ import { CheckIcon, ChevronDownIcon } from "lucide-react";
 import useClickOutside from "../hook/click-outside";
 import { getRandomIcon } from "../utils/random-icons";
 import type { Option } from "../types/select.type";
-
-interface Props {
-  options: Option[];
-}
+import type { Props } from "../types/multi-select.interface";
 
 const MultiSelect: React.FC<Props> = ({ options }) => {
   const [items, setItems] = useState<Option[]>(options);
