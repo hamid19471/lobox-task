@@ -93,7 +93,9 @@ const MultiSelect: React.FC<Props> = ({ options }) => {
                     : ""
                 }`}
               >
-                <CheckIcon size={16} />
+                {selected.some((i) => i.label === item.label) && (
+                  <CheckIcon size={16} />
+                )}
               </span>
             </div>
           ))}
