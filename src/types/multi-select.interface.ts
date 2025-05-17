@@ -1,9 +1,9 @@
-import type { SelectItem } from "./select.interface";
+import type { Option } from "./select.type";
 
 export interface MultiSelectProps {
-  items: SelectItem[];
+  items: Option[];
   placeholder?: string;
-  onChange?: (selectedItems: SelectItem[]) => void;
+  onChange?: (selectedItems: Option[]) => void;
   allowNewItems?: boolean;
   newItemPlaceholder?: string;
   className?: string;

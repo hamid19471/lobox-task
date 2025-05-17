@@ -3,11 +3,7 @@ import styles from "./multi-select.module.css";
 import { CheckIcon, ChevronDownIcon } from "lucide-react";
 import useClickOutside from "../hook/click-outside";
 import { getRandomIcon } from "../utils/random-icons";
-
-type Option = {
-  label: string;
-  icon: string;
-};
+import type { Option } from "../types/select.type";
 
 interface Props {
   options: Option[];
